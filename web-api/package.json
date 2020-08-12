@@ -7,16 +7,8 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/GTime/covid-anchor.git"
-  },
   "author": "Datsa <aseyessica@gmail.com> (Jessica)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/GTime/covid-anchor/issues"
-  },
-  "homepage": "https://github.com/GTime/covid-anchor#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
