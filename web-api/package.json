@@ -9,10 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JessicaAseyeBeks1/covid-anchor.git"
+    "url": "git+https://github.com/GTime/covid-anchor.git"
   },
-  "author": "Jessica Aseye Datsa",
-  "license": "MIT",
+  "author": "Datsa <aseyessica@gmail.com> (Jessica)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GTime/covid-anchor/issues"
+  },
+  "homepage": "https://github.com/GTime/covid-anchor#readme",
   "dependencies": {
     "express": "^4.17.1"
   },

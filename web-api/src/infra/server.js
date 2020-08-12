@@ -1,27 +1,29 @@
 const express = require("express");
-//Setup Variables
+const storyRoute = require("../modules/story/route")
+
+// Setup Variables
 const port = 4000;
 
-const server = async() =>{
-    
-//Create an express app
-const app = express();
+const server = () => {
+  // Create an express app
+  const app = express();
 
-//Routes
- app.post("/stories",(req,  res) =>{
-    res.send("Hey,stories here");
-});
+  // Configuration
+  app.use(express.urlencoded());
+  app.use(express.json());
 
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+  // Routes
+  app.use("/story", storyRoute);
 
+
+  app.listen(port, () => {
     console.table({
-        "App Name": "Covid Anchor API",
+      app: {
+        name: "Covid Anchor API ",
         path: `http://localhost:${port}`,
+      },
     });
-});
-
+  });
 };
 
 module.exports = server;
-
