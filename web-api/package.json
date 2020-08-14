@@ -7,10 +7,15 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JessicaAseyeBeks1/covid-anchor"
+  },
   "author": "Datsa <aseyessica@gmail.com> (Jessica)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.29"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

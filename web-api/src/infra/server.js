@@ -1,10 +1,14 @@
 const express = require("express");
-const storyRoute = require("../modules/story/route")
+const storyRoute = require("../modules/story/route");
+const dbConnection = require("./dbConnection");
 
 // Setup Variables
 const port = 4000;
 
-const server = () => {
+const server = async () => {
+  // Connect to database
+  await dbConnection();
+
   // Create an express app
   const app = express();
 
@@ -14,7 +18,6 @@ const server = () => {
 
   // Routes
   app.use("/story", storyRoute);
-
 
   app.listen(port, () => {
     console.table({
